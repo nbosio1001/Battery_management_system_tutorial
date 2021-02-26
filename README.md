@@ -5,7 +5,7 @@ https://www.sciencedirect.com/science/article/pii/S2352711020300492
 export BEEP_ENV="dev"
 export BEEP_PROCESSING_DIR="tutorial"
 
-# Ran tutorial and got terminal output
+## Ran tutorial and got terminal output
 
 ```
 python battery_cycler_data.py 
@@ -62,4 +62,22 @@ Arguments: ()
 1.1737735271453857
 1.1737735271453857
 ```
-  
+Trying to understand the csv file data and metadata from the tutorial
+Data
+```
+>>> import pandas as pd
+>>> data = pd.read_csv('2017-05-12_6C-50per_3_6C_CH36.csv')
+>>> data.head()
+   Data_Point  Test_Time  ...  Internal_Resistance  Temperature
+0           0     0.0000  ...             0.022012    30.457119
+1           1     0.0001  ...             0.022012    30.457119
+2           2     9.9983  ...             0.022012    30.445261
+3           3    20.0020  ...             0.022012    30.500921
+4           4    30.0006  ...             0.022012    30.500921
+```
+Metadata
+```
+>>> metadata.head()
+   Unnamed: 0  test_id  device_id  ...  m_ncanconfigmd5  value  value2
+0           0      167   60369369  ...              NaN    0.0     0.0
+```
