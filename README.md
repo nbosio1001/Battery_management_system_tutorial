@@ -7,7 +7,7 @@ export BEEP_PROCESSING_DIR="tutorial"
 
 # Ran tutorial and got terminal output
 
-'''
+```
 python battery_cycler_data.py 
 /home/nbosio1001/anaconda3/lib/python3.7/site-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.11) or chardet (3.0.4) doesn't match a supported version!
   RequestsDependencyWarning)
@@ -61,5 +61,5 @@ Arguments: ()
 876
 1.1737735271453857
 1.1737735271453857
-'''
+```
   
