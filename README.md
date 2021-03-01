@@ -65,9 +65,9 @@ Arguments: ()
 Trying to understand the csv file data and metadata from the tutorial
 Data
 ```
->>> import pandas as pd
->>> data = pd.read_csv('2017-05-12_6C-50per_3_6C_CH36.csv')
->>> data.head()
+import pandas as pd
+data = pd.read_csv('2017-05-12_6C-50per_3_6C_CH36.csv')
+data.head()
    Data_Point  Test_Time  ...  Internal_Resistance  Temperature
 0           0     0.0000  ...             0.022012    30.457119
 1           1     0.0001  ...             0.022012    30.457119
@@ -77,7 +77,8 @@ Data
 ```
 Metadata
 ```
->>> metadata.head()
+metadata = pd.read_csv('2017-05-12_6C-50per_3_6C_CH36_Metadata.csv')
+metadata.head()
    Unnamed: 0  test_id  device_id  ...  m_ncanconfigmd5  value  value2
 0           0      167   60369369  ...              NaN    0.0     0.0
 ```
