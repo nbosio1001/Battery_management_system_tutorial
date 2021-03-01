@@ -75,10 +75,30 @@ data.head()
 3           3    20.0020  ...             0.022012    30.500921
 4           4    30.0006  ...             0.022012    30.500921
 ```
+Data Columns
+```
+data.columns
+Index(['Data_Point', 'Test_Time', 'DateTime', 'Step_Time', 'Step_Index',
+       'Cycle_Index', 'Current', 'Voltage', 'Charge_Capacity',
+       'Discharge_Capacity', 'Charge_Energy', 'Discharge_Energy', 'dV/dt',
+       'Internal_Resistance', 'Temperature'],
+      dtype='object')
+
+```
 Metadata
 ```
 metadata = pd.read_csv('2017-05-12_6C-50per_3_6C_CH36_Metadata.csv')
 metadata.head()
    Unnamed: 0  test_id  device_id  ...  m_ncanconfigmd5  value  value2
 0           0      167   60369369  ...              NaN    0.0     0.0
+```
+```
+metadata.columns
+Index(['Unnamed: 0', 'test_id', 'device_id', 'iv_ch_id',
+       'first_start_datetime', 'resumed_times', 'last_resume_datetime',
+       'last_end_datetime', 'schedule_file_name', 'databases', 'item_id',
+       'grade_id', 'has_aux', 'has_special', 'schedule_version',
+       'log_aux_data_flag', 'log_special_data_flag', 'rowstate',
+       'canconfig_filename', 'm_ncanconfigmd5', 'value', 'value2'],
+      dtype='object')
 ```
